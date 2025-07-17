@@ -34,7 +34,8 @@ public class StudentsController {
 
 	    @GetMapping("/age/gt")
 	    public List<Students> getByAgeGT(@RequestParam int age) {
-	        return studentService.getByAgeGT(age);
+	        int aged studentService.getByAgeGT(age);
+	        return aged;
 	    }
 
 	    @GetMapping("/age/lt")
