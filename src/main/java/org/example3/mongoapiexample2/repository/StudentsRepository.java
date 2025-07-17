@@ -15,8 +15,9 @@ public interface StudentsRepository extends MongoRepository<Students, String> {
     List<Students> findByAgeLessThan(int age);
     
     list<students> findByAgeAndCgpa(int age,double cgpa);
+    
     List<Students> findByCgpaGreaterThan(double cgpa);
-
+     
     List<Students> findByCgpaLessThan(double cgpa);
 }
 
